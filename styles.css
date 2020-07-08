@@ -225,4 +225,8 @@ footer {
         margin: 10px 15px 0 15px;
         
     }
+    
+    div.fixed {
+        padding-top: 140px;
+    }
 }
