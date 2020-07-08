@@ -27,26 +27,45 @@ body {
 
 header {
     background-color: #eee;
-}
-
-header .wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align: center;
+    position: relative;
+    min-height: 80px;
 }
 
 header a {
     text-decoration: none;
+    z-index: 999;
 }
 
 header .site-name {
     font-size: 1.5em;
     color: #000;
     font-weight: bold;
+    position: absolute;
+    left: 30px;
+}
+
+header .site-description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 1.5;
+    overflow: hidden;
 }
 
 nav {
-    margin-top: 20px;
+    position: absolute;
+    right: 30px;
+/*    margin: auto 30px auto auto;*/
+}
+
+header nav {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 nav li {
@@ -160,10 +179,35 @@ footer {
     header {
         background-color: #000;
     }
+    
+    header nav {
+        background-color: #333;
+    }
 }
 
 @media(max-width: 600px) {
     .wrapper {
         padding: 40px 20px;
+    }
+    
+    header .site-name {
+        display: block;
+        position: relative;
+        left: 0;
+    }
+    
+    header .site-description {
+        display: block;
+        position: relative;
+        left: 0;
+    }
+    
+    nav {
+        display: block;
+        position: relative;
+        text-align: center;
+        right: 0;
+        margin: 10px 15px 0 15px;
+        
     }
 }
