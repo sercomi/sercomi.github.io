@@ -114,6 +114,18 @@ a {
     margin-bottom: 40px;
 }
 
+.item-list.grid {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 230px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.item-list.grid > li {
+    margin: 0;
+}
+
 .item-list > li {
     display: block;
     padding: 20px;
