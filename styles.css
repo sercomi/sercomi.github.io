@@ -429,4 +429,11 @@ footer {
         margin: 10px 15px 0 15px;
         
     }
+    
+    .item-list.grid {
+        display: inline-grid;
+        grid-template-columns: auto;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
 }
